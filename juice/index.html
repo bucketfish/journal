@@ -17,7 +17,7 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="juice! = fork in the road">
     <meta property="og:description" content="what happened on 4–11 april in shanghai.">
-    <meta property="og:image" content="ogimg.png">
+    <meta property="og:image" content="/juice/ogimg.png">
     <meta property="og:site_name" content="tongyu's journal">
 
     <meta name="twitter:card" content="summary_large_image">
@@ -25,7 +25,7 @@
     <meta property="twitter:url" content="https://journal.tongyu.dev/juice">
     <meta name="twitter:title" content="juice! = fork in the road · tongyu's journal">
     <meta name="twitter:description" contents="what happened on 4–11 april in shanghai.">
-    <meta name="twitter:image" content="ogimg.png">
+    <meta name="twitter:image" content="/juice/ogimg.png">
 
     <meta name="theme-color" content="#A9BF9C">
 
@@ -144,6 +144,20 @@
         border-left: solid 4px #A9BF9C;
         margin: 1.0em 10px;
         padding: 0.5em 16px;
+      }
+
+      @media (max-width: 1000px) {
+        body {
+          width: 90vw;
+        }
+      }
+
+      @media (max-width: 600px) {
+        div.image {
+          display: block;
+          float: none !important;
+          margin: 0 auto;
+        }
       }
 
 
