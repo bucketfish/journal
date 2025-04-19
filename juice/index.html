@@ -47,6 +47,7 @@
 
     <style media="screen">
       html {
+        overflow-x: hidden;
         padding: 0;
         margin: 0;
 
@@ -72,6 +73,7 @@
 
         margin: 0 auto;
         margin-top: 32px;
+
       }
 
       #juicebox {
@@ -158,9 +160,26 @@
       }
 
       @media (max-width: 800px) {
+
         body {
           width: 90vw;
+          padding: 5vw;
+
+          overflow-x: clip;
+          overflow-clip-margin: border-box 5vw;
         }
+
+
+        #juicebox {
+          display: block;
+          float: none;
+          top: -50px;
+          left: 0;
+          margin-bottom: -50px;
+          margin-left: 50%;
+          transform: translate(-50%);
+        }
+
       }
 
       @media (max-width: 600px) {
@@ -179,7 +198,10 @@
 
     <main>
       <h1>juice! = fork in the road</h1>
-      <canvas id="juicebox" width="800" height="800"></canvas>
+
+        <canvas id="juicebox" width="800" height="800"></canvas>
+
+
       <p>
         first time trying this :) it's a bit long and a bit rambling and i might
         polish this up in the future. (this page only displays well on desktop
